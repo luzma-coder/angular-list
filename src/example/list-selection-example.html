@@ -1,0 +1,23 @@
+<mat-selection-list #shoes>
+  @for (shoe of typesOfShoes; let idx = $index; track shoe) {
+  <mat-list-option>
+    <!-- <a href="">subir</a> -->
+    <mat-icon style="padding-right: 20px">cloud_upload</mat-icon>
+    <mat-icon style="padding-right: 20px">attach_file</mat-icon>
+    {{shoe}}
+  </mat-list-option>
+
+  }
+</mat-selection-list>
+<!-- <div>
+  @for (shoe of typesOfShoes; let idx = $index; track shoe) {
+        <div class="text-align: right; width: 100px">{{idx+1}}</div>
+
+  } 
+</div> -->
+
+<!-- <p>Options selected: {{shoes.selectedOptions.selected.length}}</p> -->
+
+<!-- Copyright 2023 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
